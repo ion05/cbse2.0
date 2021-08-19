@@ -17,6 +17,11 @@ const userSchema = new mongoose.Schema({
         type:Boolean,
         default: false,
         required: true, 
+    },
+    classes: {
+        type:Array,
+        required: true,
+        default: []
     }
 })
 

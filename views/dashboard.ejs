@@ -12,8 +12,20 @@
     <h1> Dashboard </h1>
     <% if (user.isTeacher == true) { %>
     <h3>Create a class</h3>
+    <h3><%= user.username %> </h3>
+    <form action="/class/create" method="POST">
+        <input type="text" name="name" id="name" placeholder="Class Name">
+        <input type="text" name="description" id="description" , placeholder="Class Description">
+        <button>Create Class</button>
+    </form>
     <% } else { %>
     <h3> Join a Class</h3>
+    <form action="/class/join" method="POST">
+        <input type="text" name="code" id="code" placeholder="Class Code">
+        <button>Join Class</button>
+    </form>
+    <br>
+    <h3>Existing Classes</h3>
     <% } %>
 </body>
 
