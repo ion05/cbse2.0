@@ -13,6 +13,11 @@ const userSchema = new mongoose.Schema({
         type:String,
         default: dateStringWithTime
     },
+    isTeacher: {
+        type:Boolean,
+        default: false,
+        required: true, 
+    }
 })
 
 userSchema.plugin(passportLocalMongoose)
