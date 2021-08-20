@@ -12,13 +12,15 @@ router.post('/create', (req,res)=> {
     answer = req.body.answer
     classCode=req.body.code.trim()
     quizId= randomString.generate(7)
+    time= req.body.time
     name=req.body.name
     const newQuiz = new Quiz({
         "name": name,
         "classCode": classCode,
         "questions": question,
         "answers": answer,
-        'quizId': quizId
+        'quizId': quizId,
+        'time': time
     });
     newQuiz.save().then((result)=> {
         console.log(result)

@@ -7,6 +7,10 @@ const quizSchema = new mongoose.Schema({
     answers: reqArray,
     classCode: reqString,
     quizId: reqString,
+    time: {
+        type: Integer, 
+        required: true
+    }
 })
 
 module.exports = mongoose.model('Quiz', quizSchema)

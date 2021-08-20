@@ -20,7 +20,7 @@ router.post("/", (req, res) => {
   console.log("Question Logged");
 });
 
-router.get("/:backlink", (req, res) => {
+router.get("/:backlink", ensureAuthenticated, (req, res) => {
   backlink = req.params.backlink;
   Question.findOne({ backlink: backlink }).then((result) => {
     console.log(result.answers);
@@ -34,7 +34,7 @@ router.get("/:backlink", (req, res) => {
   });
 });
 
-router.get("/", (req, res) => {
+router.get("/", ensureAuthenticated, (req, res) => {
   Question.find({}, (err, questions) => {
     if (err) {
       console.log(err);
