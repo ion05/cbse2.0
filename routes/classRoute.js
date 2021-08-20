@@ -28,10 +28,11 @@ router.post('/create', (req,res) => {
 
 })
 router.get("/:classId", ensureAuthenticated , (req,res) => {
+    const user=req.user
     classId = req.params.classId
     Class.findOne({"classId": classId}).then((result) => {
         console.log(result)
-        res.render('class', {class:result, className: result.name})
+        res.render('class', {class:result, className: result.name, user:user})
     })
     
 })

@@ -13,6 +13,12 @@
     <p>
         <%= className %>
     </p>
+    <% if (user.isTeacher == true) { %>
+    <form action="/quiz/create" method="GET">
+        <button>Create a Quiz</button>
+    </form>
+    <% } %>
+
 </body>
 
 </html>

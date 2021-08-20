@@ -40,11 +40,13 @@ app.use(passport.session());
 const registerRoute = require("./routes/authRoute")
 const dashboardRoute = require("./routes/dashboardRoute")
 const classRoute = require('./routes/classRoute')
+const quizRoute = require("./routes/quizRoute")
 
 //routes
 app.use("/", registerRoute)
 app.use("/dashboard", dashboardRoute)
 app.use('/class', classRoute)
+app.use('/quiz', quizRoute)
 
 
 //listening
