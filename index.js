@@ -42,6 +42,7 @@ const dashboardRoute = require("./routes/dashboardRoute")
 const classRoute = require('./routes/classRoute')
 const meetingRoute = require("./routes/meetingRoute")
 const homeRoute = require("./routes/homeRoute")
+const forumRoute = require("./routes/forumRoute")
 
 //routes
 app.use("/", registerRoute)
@@ -49,6 +50,7 @@ app.use("/dashboard", dashboardRoute)
 app.use('/class', classRoute)
 app.use("/meet", meetingRoute)
 app.use("/", homeRoute)
+app.use("/", forumRoute)
 
 //listening
 const PORT = process.env.PORT || 5000
