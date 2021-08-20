@@ -8,7 +8,7 @@ const quizSchema = new mongoose.Schema({
     classCode: reqString,
     quizId: reqString,
     time: {
-        type: Integer, 
+        type: Number, 
         required: true
     }
 })

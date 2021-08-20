@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: /*#1C1E2F*/ #1B1B28 !important;
+    color: #eee !important;
+    overflow: hidden;
+}
+.register img{
+    position: absolute;
+    margin-top: 15vw;
+}
+.register-cont{
+    margin-top: 15vw !important;
+    background: linear-gradient(145deg, #181824, #1d1d2b);
+    box-shadow:  20px 20px 60px #13131d,
+             -20px -20px 60px #232333;
+    height: 40vw;
+    width: 40vw;
+    border-radius: 1.5vw;
+    margin-top: 20vw;
+    margin-left: 2.5vw;
+}
+
+.register-cont h1{
+    margin-top: 2.5vw;
+    margin-left: 3vw;
+    position: absolute;
+    font-size: 2.5vw;
+}
+.register-cont label{
+    color: rgb(192, 192, 192);
+    font-weight: 700;
+    position: absolute;
+}
+.register-cont input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #eee;
+    transition: all 0.5s ease;
+}
+.register-cont input:focus{
+    outline: none;
+    border-bottom: 2px solid #2B66D5;
+}
+.label-register-email{
+    margin-left:3.5vw;
+    margin-top: 15vw ;
+}
+.label-register-pw{
+    margin-top: 22.5vw;
+    margin-left: 3.5vw;
+}
+.input-register-email{
+    margin-top: 17.5vw;
+    margin-left: 5vw;
+    position: absolute;
+    color: #eee;
+    padding: 10px;
+    width: 25vw;
+}
+.label-register-name{
+    position: absolute;
+    margin-top: 7.5vw;
+    margin-left: 3.5vw;
+}
+.input-register-name{
+    position: absolute;
+    margin-left: 5vw;
+    margin-top: 11vw;
+    width: 25vw;
+}
+.input-register-pw{
+    margin-top: 25vw;
+    margin-left: 5vw;
+    padding: 10px;
+    color: #eee;
+    width: 25vw;
+}
+.register-btn{
+    position: absolute;
+    margin-top: 33vw;
+    color: #eee !important;
+    background-color: #2B66D5 !important;
+    margin-left: -25vw;
+    border-radius: 0.5vw;
+    width: 10vw;
+    height: 3.5vw;
+}
+input{
+    color: #eee;
+}
