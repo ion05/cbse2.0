@@ -9,7 +9,8 @@ const classSchema = new mongoose.Schema({
     students: {
         type: Array,
         required: true
-    }
+    },
+    meetingLink: reqString
 })
 
 module.exports = mongoose.model('Class', classSchema)
