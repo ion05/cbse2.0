@@ -50,7 +50,7 @@ app.use("/dashboard", dashboardRoute)
 app.use('/class', classRoute)
 app.use("/meet", meetingRoute)
 app.use("/", homeRoute)
-app.use("/", forumRoute)
+app.use("/forums", forumRoute)
 
 //listening
 const PORT = process.env.PORT || 5000
