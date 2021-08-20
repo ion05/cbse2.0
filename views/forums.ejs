@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forums</title>
+</head>
+<body>
+    <% if(!questions){ %>
+        
+         <%= title %>
+        <%= description %>  
+
+        <% if (answers) {%>
+            <% for (let i = 0; i < answers.length; i++) {%>
+                <h2> <%= answers[i].title %>  </h2>   
+                <h4> <%= answers[i].description %>  </h4>                 
+            <% } %> 
+        <% } %> 
+
+
+        <form action="/forums/<%= backlink %>/answer" method="post">
+            <input type="text" id="title" name="title" placeholder="Title" required>
+            <input type="text" id="description" name="description" placeholder="Description" required>
+            <button type="submit">Answer</button>
+        </form>
+
+        
+
+        <%}else{%> 
+
+            <form action="/forums" method="post">
+                <input type="text" id="title" name="title" placeholder="Title" required>
+                <input type="text" id="description" name="description" placeholder="Description" required>
+                <button type="submit">Ask</button>
+            </form>
+        
+
+
+            <% for( let i = 0; i < questions.length; i++ ) { %>
+                <h2><a href="/forums/<%=questions[i].backlink%>"> <%= questions[i].title %> </a> </h2>
+                <h2><%= questions[i].description %>  </h2>
+                <% } %>
+             
+
+       <% } %> 
+</body>
+</html>

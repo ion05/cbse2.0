@@ -54,6 +54,8 @@ app.use("/meet", meetingRoute)
 app.use("/", homeRoute)
 app.use("/", forumRoute)
 app.use("/doubt", doubtRoute)
+app.use("/forums", forumRoute)
+
 //listening
 const PORT = process.env.PORT || 5000
 app.listen(PORT, ()=>{
