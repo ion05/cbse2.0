@@ -14,7 +14,8 @@
         <%= className %>
     </p>
     <% if (user.isTeacher == true) { %>
-    <form action="/quiz/create" method="GET">
+    <form action="/quiz/quiz/create" method="GET">
+        <input name="code" value="<%= classCode %> " hidden>
         <button>Create a Quiz</button>
     </form>
     <% } %>

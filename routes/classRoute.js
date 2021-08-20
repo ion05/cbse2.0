@@ -17,6 +17,8 @@ router.post('/create', (req,res) => {
         "description": description,
         "classId": classId,
         "teacher": teacher,
+        "meetingLink": "",
+        "students": students
     });
     
     newClass.save(function(err, result) {
@@ -30,9 +32,10 @@ router.post('/create', (req,res) => {
 router.get("/:classId", ensureAuthenticated , (req,res) => {
     const user=req.user
     classId = req.params.classId
+    console.log("Class id is ", classId)
     Class.findOne({"classId": classId}).then((result) => {
-        console.log(result)
-        res.render('class', {class:result, className: result.name, user:user})
+        // console.log(result)
+        res.render('class', {classCode: classId, className: result.name, user:user})
     })
     
 })

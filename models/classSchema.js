@@ -10,7 +10,10 @@ const classSchema = new mongoose.Schema({
         type: Array,
         required: true
     },
-    meetingLink: reqString
+    meetingLink: {
+        type: String,
+        default: null
+    }
 })
 
 module.exports = mongoose.model('Class', classSchema)
