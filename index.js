@@ -41,6 +41,9 @@ const registerRoute = require("./routes/authRoute")
 const dashboardRoute = require("./routes/dashboardRoute")
 const classRoute = require('./routes/classRoute')
 const quizRoute = require("./routes/quizRoute")
+const meetingRoute = require("./routes/meetingRoute")
+const homeRoute = require("./routes/homeRoute")
+const forumRoute = require("./routes/forumRoute")
 
 //routes
 app.use("/", registerRoute)
@@ -48,6 +51,9 @@ app.use("/dashboard", dashboardRoute)
 app.use('/class', classRoute)
 app.use('/quiz', quizRoute)
 
+app.use("/meet", meetingRoute)
+app.use("/", homeRoute)
+app.use("/", forumRoute)
 
 //listening
 const PORT = process.env.PORT || 5000
