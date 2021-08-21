@@ -41,7 +41,6 @@ const registerRoute = require("./routes/authRoute")
 const dashboardRoute = require("./routes/dashboardRoute")
 const classRoute = require('./routes/classRoute')
 const quizRoute = require("./routes/quizRoute")
-const meetingRoute = require("./routes/meetingRoute")
 const homeRoute = require("./routes/homeRoute")
 const forumRoute = require("./routes/forumRoute")
 const doubtRoute = require('./routes/doubtRoute')
@@ -50,14 +49,36 @@ app.use("/", registerRoute)
 app.use("/dashboard", dashboardRoute)
 app.use('/class', classRoute)
 app.use('/quiz', quizRoute)
-app.use("/meet", meetingRoute)
 app.use("/", homeRoute)
-app.use("/", forumRoute)
 app.use("/doubt", doubtRoute)
 app.use("/forums", forumRoute)
 
-//listening
 const PORT = process.env.PORT || 5000
-app.listen(PORT, ()=>{
-    console.log(`App Listening on port ${PORT}`);
+
+const { PeerServer } = require('peer');
+
+
+const peerServer = PeerServer({
+    port: 9000, path: '/'
+});
+app.use('/peerjs', peerServer);
+
+const { v4: uuidV4 } = require('uuid')
+
+app.get("/meet", (req, res)=>{
+    console.log("first");
+  res.redirect(`/meet/${uuidV4()}`)
 })
+
+app.get('/meet/:room', (req, res) => {
+    console.log("second");
+
+    res.render('room', { roomId: req.params.room })
+  })
+
+
+
+  app.listen(PORT, err => {
+    console.log(`API listening on port ${PORT}.`);
+    if (err) throw err;
+  });

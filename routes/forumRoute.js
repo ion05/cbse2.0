@@ -5,7 +5,7 @@ const { nanoid } = require("nanoid");
 const { ensureAuthenticated } = require("../config/auth");
 const Question = require("../models/questionSchema");
 
-router.post("/", (req, res) => {
+router.post("/", ensureAuthenticated, (req, res) => {
   const newQuestion = new Question({
     title: req.body.title,
     description: req.body.description,
@@ -23,7 +23,6 @@ router.post("/", (req, res) => {
 router.get("/:backlink", ensureAuthenticated, (req, res) => {
   backlink = req.params.backlink;
   Question.findOne({ backlink: backlink }).then((result) => {
-    console.log(result.answers);
     res.render("forums", {
       questions: null,
       title: result.title,
@@ -43,7 +42,7 @@ router.get("/", ensureAuthenticated, (req, res) => {
   });
 });
 
-router.post("/:backlink/answer", (req, res) => {
+router.post("/:backlink/answer",ensureAuthenticated, (req, res) => {
     backlink = req.params.backlink;
 
             let answer = {
