@@ -1,12 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <link href="/css/styles.css" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 </head>
+</head>
+
 <body>
+    <div class="container-fluid">
+        <div class="row log">
+            <div class="col-sm-6">
+                <div class="login-cont">
+                    <h1>Welcome Back, Buddy!!</h1>
+                    <form action="/login" method="POST">
+                        <label for="" class="label-login-email">Email</label>
+                        <input type="text" class="input-login-email" name="email" id="email">
+                        <label for="" class="label-login-pw">Password</label>
+                        <input type="text" class="input-login-pw" name="password" id="password">
+                        <button class="login-btn btn">Login</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-sm-6 log-img">
+                <img src="https://media.discordapp.net/attachments/741244174736556076/878243259061764156/unknown.png"
+                    alt="">
+            </div>
+        </div>
+    </div>
     <form action="/login" method="POST">
         <input required="true" type="email" name="email" id="email" placeholder="Email">
         <input required="true" type="password" name="password" id="password" placeholder="Password">
@@ -14,4 +40,5 @@
     </form>
 
 </body>
+
 </html>

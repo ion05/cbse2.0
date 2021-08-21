@@ -6,10 +6,202 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
-    <h1> Dashboard </h1>
+    <div class="container-fluid">
+        <div class="nav">
+            <div class="sq"></div>
+            <div class="search-div">
+                <span class="material-icons-outlined">
+                    search
+                </span>
+            </div>
+            <div class="acc-cred">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX5muqH6KDKLDD4gIkuPkbf9BWhwU2kdJ7FA&usqp=CAU"
+                    alt="">
+            </div>
+            <ul>
+                <li>
+                    <span class="material-icons-outlined">
+                        home
+                    </span>
+                </li>
+                <li>
+                    <span class="material-icons-outlined">
+                        videocam
+                    </span>
+                </li>
+                <li>
+                    <span class="material-icons-outlined">
+                        calendar_today
+                    </span>
+                </li>
+                <li>
+                    <span class="material-icons-outlined">
+                        chat_bubble_outline
+                    </span>
+                </li>
+                <li>
+                    <span class="material-icons-outlined">
+                        import_contacts
+                    </span>
+                </li>
+                <li>
+                    <span class="material-icons-outlined">
+                        assignment_turned_in
+                    </span>
+                </li>
+                <div class="settings">
+                    <span class="material-icons-outlined">
+                        settings
+                    </span>
+                </div>
+            </ul>
+        </div>
+        <div class="line-1"></div>
+        <div class="main-div">
+            <h1>Home</h1>
+            <form action="/class/join" method="POST">
+                <div class="meet-sq">
+                    <div class="meet-icon">
+                        <span class="material-icons-outlined">
+                            videocam
+                        </span>
+                    </div>
+                    <h3>Quick Join</h3>
+                    <p>Via invitation link</p>
+                    <input type="text" name="code" id="code" placeholder="Class Code">
+                    <button class="button">Join CLass</button>
+                </div>
+            </form>
+            <h3> Join a Class</h3>
+
+
+            <button>Join Class</button>
+
+
+            <div class="meet-log active" style="margin-top: 27.5vw; border:5px solid #2d5aad;">
+                <div class="teacher-pfp">
+                </div>
+                <h3>Maths Class</h3>
+                <p>Started 6 mins ago | Mike Bleach</p>
+                <button class="id btn">ID</button><button class="join btn ">JOIN</button>
+            </div>
+            <div class="meet-log">
+                <div class="teacher-pfp" style="border:none;"></div>
+                <h3>English Test</h3>
+                <p>
+                    <p>Starts in 1hr 30 mins | Jake Kin</p>
+                </p>
+                <button class="id btn">ID</button><button class="join btn ">JOIN</button>
+            </div>
+        </div>
+        <div class="line-2"></div>
+        <div class="other-div">
+            <div class="time-component">
+
+            </div>
+            <div class="note-component">
+                <div class="note-icon">
+                    <span class="material-icons-outlined">
+                        history_edu
+                    </span>
+                    <h5>Notes</h5>
+                </div>
+            </div>
+            <div class="faq-component">
+                <div class="faq-icon">
+                    <span class="material-icons-outlined">
+                        question_answer
+                    </span>
+                    <h5>Q&A</h5>
+                </div>
+            </div>
+            <div class="assignment-div">
+                <h4>Assignment Pending</h4>
+                <div class="activity-circle">
+                </div>
+                <p>Social Science Holiday Homework</p>
+                <h5>Due Date: Tomorrow</h5>
+            </div>
+        </div>
+        <div class="attendance-div">
+            <h4>Attendance</h4>
+        </div>
+        <div class="course-div">
+            <h4>Course Completed</h4>
+        </div>
+        <div class="qa-component">
+            <h1>Questions & Answers</h1>
+            <hr>
+            <h3>Django - cache view response <br>
+                for the remaining day </h3>
+            <div class="prompt-div">
+                <div class="prompt-author">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX5muqH6KDKLDD4gIkuPkbf9BWhwU2kdJ7FA&usqp=CAU"
+                        alt="">
+                    <h4>Matt Schews</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing <br>
+                        elit. Quidem a asperiores, temporibus sed quos error <br>
+                        ad nam fugiat delectus distinctio? Temporibus enim <br>
+                        assumenda eveniet nulla laborum voluptatem. Quisquam, <br>
+                        repellat iste.
+                    </p>
+                </div>
+                <div class="status-div">
+                    <span class="material-icons-outlined">
+                        play_circle
+                    </span>
+                    <h4>Status: Active</h4>
+                </div>
+            </div>
+            <div class="sol-div">
+                <h3>Answer</h3>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX5muqH6KDKLDD4gIkuPkbf9BWhwU2kdJ7FA&usqp=CAU"
+                    alt="">
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+            </div>
+        </div>
+        <div class="quiz-cont">
+            <h1>Quiz Generator</h1>
+            <div class="quiz-input-div">
+                <label>Question 1</label>
+                <input type="text">
+                <button class="add-1">
+                    <span class="material-icons-outlined">
+                        add_circle_outline
+                    </span>
+                    Add a mcq template
+                </button>
+                <button class="add-2">
+                    <span class="material-icons-outlined">
+                        add_circle_outline
+                    </span>
+                    Add input template
+                </button>
+                <button class="create-more">
+                    <span class="material-icons-outlined">
+                        add_circle_outline
+                    </span>
+                </button>
+            </div>
+        </div>
+        <div class="quiz-disp" style="display: none;">
+            <h1>Quiz</h1>
+            <div class="quiz-ques">
+                <h4>Q1. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum cupiditate eos optio?</h4>
+                <div class="res-input-div">
+                    <input type="">
+                </div>
+            </div>
+        </div>
+    </div>
     <% if (user.isTeacher == true) { %>
     <h3>Create a class</h3>
     <h3><%= user.username %> </h3>
@@ -19,15 +211,10 @@
         <button>Create Class</button>
     </form>
     <% } else { %>
-    <h3> Join a Class</h3>
-    <form action="/class/join" method="POST">
-        <input type="text" name="code" id="code" placeholder="Class Code">
-        <button>Join Class</button>
-    </form>
-    <br>
-    <h3>Existing Classes</h3>
+
 
     <% } %>
 </body>
+<script src="js/app.js"></script>
 
 </html>
