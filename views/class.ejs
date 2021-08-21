@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/dashboard.css" rel="stylesheet">
     <title>Class </title>
 </head>
 
@@ -16,7 +17,7 @@
     <% if (user.isTeacher == true) { %>
     <form action="/quiz/quiz/create" method="GET">
         <input name="code" value="<%= classCode %> " hidden>
-        <button>Create a Quiz</button>
+        <button class="join">Create a Quiz</button>
     </form>
     <% } %>
 

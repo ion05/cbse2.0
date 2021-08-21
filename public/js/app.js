@@ -1,28 +1,28 @@
-const songDate = new Date();
-const day = songDate.getDay();
-switch(day){
-    case 0:
-        currentDay = 'Sunday';
-        break;
-    case 1:
-        currentDay = 'Monday';
-        break;
-    case 2:
-        currentDay = 'Tuesday';
-        break;
-    case 3:
-        currentDay = 'Wednesday';
-        break;
-    case 4:
-        currentDay = 'Thursday';
-        break;
-    case 5:
-        currentDay = 'Friday';
-        break;
-    case 6:
-        currentDay = 'Saturday';
-        break;
-}
+// const songDate = new Date();
+// const day = songDate.getDay();
+// switch(day){
+//     case 0:
+//         currentDay = 'Sunday';
+//         break;
+//     case 1:
+//         currentDay = 'Monday';
+//         break;
+//     case 2:
+//         currentDay = 'Tuesday';
+//         break;
+//     case 3:
+//         currentDay = 'Wednesday';
+//         break;
+//     case 4:
+//         currentDay = 'Thursday';
+//         break;
+//     case 5:
+//         currentDay = 'Friday';
+//         break;
+//     case 6:
+//         currentDay = 'Saturday';
+//         break;
+// }
 const hours =   songDate.getHours();
 const minutes = songDate.getMinutes();
 const h = (songDate.getHours()<10?'0':'') + songDate.getHours();

@@ -52,7 +52,6 @@ app.use('/class', classRoute)
 app.use('/quiz', quizRoute)
 app.use("/meet", meetingRoute)
 app.use("/", homeRoute)
-app.use("/", forumRoute)
 app.use("/doubt", doubtRoute)
 app.use("/forums", forumRoute)
 

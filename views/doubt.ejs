@@ -7,6 +7,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ask a doubt!</title>
 </head>
+<style>
+    .id,
+    .join {
+        position: absolute;
+        margin-top: 12.5vw;
+        color: #eee !important;
+    }
+
+    .id {
+        margin-left: 3.5vw;
+        width: 5vw;
+        border: 2px solid #353952 !important;
+    }
+
+    .join {
+        margin-left: 10vw;
+        background: #2967E0 !important;
+    }
+</style>
 
 <body>
     <h2> Ask your doubt </h2>
@@ -14,7 +33,7 @@
     <% if(answer == null) {%>
     <form action="/doubt" method="POST">
         <input type="text" name="question" id="question">
-        <button>Ask your question</button>
+        <button class="join">Ask your question</button>
     </form>
     <% }  else {%>
     Your answer is <%= answer  %>
