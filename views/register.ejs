@@ -9,9 +9,18 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <title>Register</title>
+    <link rel="stylesheet" href="./css/register.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 </head>
 
 <body>
+    <!-- <form action="/register" method="POST">
+        <input required="true" type="email" name="email" id="email" placeholder="Email">
+        <input required="true" type="username" name="username" id="username" placeholder="username">
+        <input required="true" type="username" name="username" id="username" placeholder="Password">
+        <button type="submit" class="register">Register</button>
+    </form> -->
     <div class="container-fluid">
         <div class="row register">
             <div class="col-sm-6">
@@ -19,13 +28,12 @@
                     <h1>Let's get started</h1>
                     <form action="/register" method="POST">
                         <label for="" class="label-register-name">Name</label>
-                        <input type="text" class="input-register-name" name="username" id="username"
-                            placeholder="Full Name">
+                        <input required="true" type="username" name="username" id="username"
+                            class="input-register-name">
                         <label for="" class="label-register-email">Email</label>
-                        <input type="text" class="input-register-email" name="email" id="email" placeholder="email">
+                        <input required="true" type="email" name="email" id="email" class="input-register-email">
                         <label for="" class="label-register-pw">Password</label>
-                        <input type="text" class="input-register-pw" name="password" id="password"
-                            placeholder="password" password>
+                        <input required="true" type="password" name="password" id="password" class="input-register-pw">
                         <button class="register-btn btn">Register</button>
                     </form>
                 </div>
@@ -36,7 +44,6 @@
             </div>
         </div>
     </div>
-
 </body>
 
 </html>

@@ -14,8 +14,8 @@ const User = require("./models/userSchema")
 app.use(express.json());
 app.use(express.urlencoded({extended:true}))
 app.use(session({
-   secret:process.env.SECRET,
-   resave:true,
+    secret:process.env.SECRET,
+    resave:true,
     saveUninitialized:true
 }));
 

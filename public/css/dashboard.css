@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: /*#1C1E2F*/ #1B1B28 !important;
+    color: #eee !important;
+    overflow: hidden;
+}
+.line-2{
+    width: 0.25vw;
+    height: 55vw;
+    background:#202334;
+    position: absolute;
+    margin-top: 12.5vw;
+    margin-left: 50vw;
+}
+.main-div h1{
+    position: absolute;
+    margin-left: 12.5vw;
+    margin-top: 5vw;
+}
+.meet-sq{
+    width: 35vw;
+    height: 12.5vw;
+    background :#2967E0;
+    padding: 10px;
+    border-radius: 1vw;
+    margin-top: 12.5vw;
+    margin-left: 12.5vw;
+    position: absolute;
+}
+.meet-sq .meet-icon{
+    font-size: 2.5vw;
+    margin-left: 1.5vw;
+    margin-top: 1.5vw;
+    width: 5vw;
+    height: 5vw;
+    background: #2d5aad;
+    border-radius: .75vw;
+}
+.meet-icon span{
+    position: absolute;
+    margin-left: 1.2vw;
+    margin-top: 0.5vw;
+}
+.meet-sq h3{
+    position: absolute;
+    margin-top: -1.5vw;
+    margin-left: 20vw;
+}
+.meet-sq p{
+    font-weight: lighter;
+    font-size: 1.5vw;
+    position: absolute;
+    margin-top: 1.5vw;
+    margin-left: 20vw;
+}
+.meet-log{
+    height: 17.5vw;
+    width: 35vw;
+    position: absolute;
+    margin-top: 5vw;
+    margin-left: 12.5vw;
+    background: #202334;
+    border-radius: 1.5vw;
+}
+.meet-log:not(.active){
+    margin-top: 47.5vw;
+}
+.meet-log h3,.meet-log p{
+    position: absolute;
+}
+.meet-log h3{
+    margin-left: 3.5vw;
+    font-size: 2.5vw;
+    margin-top: 3.5vw;
+}
+.meet-log p{
+    margin-left: 4vw;
+    color: #a7a7a7;
+    margin-top: 7.5vw;
+}
+.id,.join{
+    position: absolute;
+    margin-top: 12.5vw;
+    color: #eee !important;
+}
+.id{
+    margin-left: 3.5vw;
+    width: 5vw;
+    border: 2px solid #353952 !important;
+}
+.join{
+    margin-left: 10vw;
+    background: #2967E0 !important;
+}
+.time-component{
+    position: absolute;
+    background:#232333;
+    width: 27.5vw;
+    height: 15vw;
+    margin-top: 12.5vw;
+    border-radius: 1.5vw;
+    margin-left: 52.5vw;
+}
+.note-component,.faq-component{
+    position: absolute;
+    margin-top: 30vw;
+    width: 12.5vw;
+    height: 12.5vw;
+    background:#232333;
+    border-radius: 1.5vw;
+    cursor: pointer;
+}
+.main-div,
+.other-div{
+    overflow-y: scroll;
+}
+.note-component {
+    margin-left: 52.5vw;
+}
+.faq-component{
+    margin-left: 67.5vw;
+}
+.assignment-div{
+    position: absolute;
+    margin-top: 47.5vw;
+    width: 27.5vw;
+    height: 17.5vw;
+    border-radius: 1.5vw;
+    background: linear-gradient(96deg ,#11121b,#1B1D2E);
+    margin-left: 52.5vw;
+}
+.attendance-div,.course-div{
+    position: absolute;
+    margin-left: 81.5vw;
+}
+.attendance-div{
+    width: 15vw;
+    height: 15vw;
+    background:linear-gradient(196deg ,#11121b,#1B1D2E);
+    margin-top: 12.5vw;
+    border-radius: 1.5vw;
+}
+.course-div{
+    width: 15vw;
+    height: 15vw;
+    background:linear-gradient(96deg ,#11121b,#1B1D2E);
+    margin-top: 30vw;
+    border-radius: 1.5vw;
+}
+.search-div,
+.acc-cred{
+    position: absolute;
+}
+.acc-cred {
+    display: flex;
+}
+.search-div{
+    margin-top: 5vw;
+    margin-left: 85vw;
+}
+.acc-cred img{
+    width: 2.5vw;
+    height: 2.5vw;
+    border-radius: 100%;
+    margin-top: 5.5vw;
+    margin-left: 90vw;
+    cursor: pointer;
+}
+.time-component h3,h4{
+    position: absolute;
+}
+.time-component h3{
+    margin-top: 6vw;
+    margin-left: 2.5vw;
+}
+.time-component h4{
+    margin-top: 9vw;
+    margin-left: 2.5vw;
+}
+.note-icon,.faq-icon{
+    width: 4.5vw;
+    height: 4.5vw;
+    background: #181824;
+    border-radius: .5vw;
+    position: absolute;
+    margin-top: 1.5vw;
+    margin-left: 1.5vw;
+}
+.note-icon span,
+.faq-icon span{
+    font-size: 2.5vw;
+    margin-left: 0.75vw;
+    margin-top: 0.5vw;
+}
+.note-component h5,
+.faq-component h5{
+    position: absolute;
+    margin-top: 3.5vw;
+    margin-left: 5vw;
+}
+.assignment-div h4,
+.assignment-div .activity-circle,
+.assignment-div h5,
+.assignment-div p{
+    position: absolute;
+}
+.assignment-div h4{
+    margin-top: 5vw;
+    margin-left: 1.5vw;
+}
+.assignment-div h5{
+    margin-top: 10vw;
+    margin-left: 1.5vw;
+}
+.assignment-div p{
+    margin-top: 7.5vw;
+    margin-left: 1.5vw;
+    color: #86868b;
+}
+.activity-circle{
+    width: 0.5vw;
+    height: 0.5vw;
+    padding: 5px;
+    background: #2B66D5;
+    border-radius: 100%;
+    margin-top: 6.5vw;
+    margin-left: 25vw;
+}
+.attendance-div h4,.course-div h4{
+    position: absolute;
+    margin-top: 1.5vw;
+    margin-left: 1.5vw;
+}

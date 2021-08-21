@@ -1,0 +1,58 @@
+span{
+    font-family: "Material Icons", sans-serif;
+}
+.nav{
+    font-size: 2.5vw;
+    position: absolute;
+}
+.nav ul{
+    list-style: none;
+    margin-left: 0.5vw;
+    padding-top: 17.5vw;
+    cursor: pointer;
+}
+.nav ul li{
+    margin-bottom: 2.5vw;
+}
+.sq{
+    width: 2.5vw;
+    height: 2.5vw;
+    background: #2B66D5 ;
+    border-radius: 0.5vw;
+    position: absolute;
+    margin-top: 5vw;
+    margin-left: 3vw;
+}
+.settings{
+    position: absolute;
+    margin-top: 7.5vw;
+    padding-top: 2.5vw;
+    border-top: 2px solid #202334;
+}
+.line-1{
+    width: 0.25vw;
+    height: 65vw;
+    background:#202334;
+    position: absolute;
+    margin-top: 3.5vw;
+    margin-left: 9.5vw;
+}
+.search-div,
+.acc-cred{
+    position: absolute;
+}
+.acc-cred {
+    display: flex;
+}
+.search-div{
+    margin-top: 5vw;
+    margin-left: 85vw;
+}
+.acc-cred img{
+    width: 2.5vw;
+    height: 2.5vw;
+    border-radius: 100%;
+    margin-top: 5.5vw;
+    margin-left: 90vw;
+    cursor: pointer;
+}
